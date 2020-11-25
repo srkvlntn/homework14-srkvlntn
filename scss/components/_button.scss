@@ -1,0 +1,26 @@
+// Общие стили для кнопок 
+
+.btn {
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	vertical-align: top;
+	padding: 15px 20px;
+	border-radius: 5px;
+	color: #fff;
+	text-decoration: none;
+	border: solid 2px #fff;
+	line-height: 1.5;
+	outline: none;
+	background-color: #3a454d;
+	font-weight: bold;
+
+	&:hover {
+		background-color: #53636f;
+	}
+}
+
+.btn-box {
+	display: flex;
+	text-align: center;
+}

@@ -1,0 +1,88 @@
+// пример использования media (breakpoints в верху файла)
+body {
+	@include media ('>=tablet') {
+		.logo {
+			display: block;
+		}
+
+		.content-box {
+			width: 100%;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0 -10px 40px 0;
+		
+		}
+		
+		.col {
+			width: 33%;
+			padding: 0 10px;
+		}
+
+		h1 {
+			font-size: 30px;
+		}
+	
+		h3 {
+			font-size: 11.5px;
+		}
+	}
+
+	@include media ('>=desktop') {
+		.content-box {
+			margin: 0 -15px 60px 0;
+		}
+
+		.logo {
+			h1{
+				padding-left: 20px;
+				border-bottom: none;
+				border-left: solid 10px #4e5a62;
+				justify-content: flex-start;
+			}
+		}
+		h3 {
+			font-size: 18px;
+		}
+	}
+}
+
+.wrapper {
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1170px;
+	padding: 0px 15px;
+	margin: 0 auto;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto 25px;
+}
+
+.logo {
+	padding: 30px 15px;
+	justify-content: center;
+	display: flex;
+
+	h1 {
+		display: inline-flex;
+		text-transform: uppercase;
+		border-bottom: solid 4px #4e5a62;
+		color: #fff;
+	}
+}
+
+h3 {
+	font-size: 16px;
+}
+
+.content-box {
+	margin-bottom: 40px;
+}
